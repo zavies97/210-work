@@ -1,0 +1,34 @@
+REVERSER(ARRAY)
+	reverse <- []
+	for i=0 to length(ARRAY)
+		reverse <- array[i] + reverse
+	return reverse
+
+
+VOWELREMOVE(STRING, COUNTER)
+	if COUNTER = length(STRING)
+		return STRING
+	if STRING[COUNTER] = any of "aeiou"
+		STRING = STRING.replace(STRING[COUNTER], "")
+		return(VOWELREMOVE(STRING, COUNTER))
+	else:
+		return(VOWELREMOVE(STRING, COUNTER+1))
+
+###for this one, the string is converted to lower before being sent to the function
+
+
+
+
+PRIMECHECK(COUNTER, X)
+	if X>1
+		if X = COUNTER
+			return"is prime"
+		elif (X % COUNTER) = 0
+			retrun "is not prime"
+		else:
+			return (PRIMECHECK(COUNTER+1, X))
+	else:
+		return "is not prime"
+
+
+###counter always equalls 2 initially

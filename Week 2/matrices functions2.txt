@@ -1,0 +1,33 @@
+ADD(A, B, X)
+	result <- [][]
+	for i=1 to length(X)
+		for j=1 to length(X)
+			result[i][j] <- A[i][j] + B[i][j]
+	return result
+
+SUBTRACT(A, B, X)
+	result<- [][]
+	for i=1 to length(X)
+		for j=1 to length(X)
+			result[i][j] <- A[i][j] + B[i][j]
+	return result
+
+MULTIPLY(A, B, X)
+	result<- [][]
+	for i=1 to length(X)
+		for j=1 to length(X)
+			for k in range(0, X)
+				result[i][j] += one[i][j] * two[i][k]
+	return result
+
+
+
+
+
+Where x = length of matrix row/column
+A is matrix one
+B is matrix two
+
+Big O notation = n + 2n^2 + n+ 2n^2 + n + n^2 +2n^3 = 3n + 5n^2 + 2n^3 = n^3
+
+O(n^3)

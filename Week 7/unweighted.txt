@@ -1,0 +1,13 @@
+UNWEIGHTED:
+	connect <- dict
+
+	INSERT(KEY, VALUE)
+		connect[KEY] <- VALUE
+
+	OUTPUT()
+		for i in (1, length(connect)+1, i++) 
+			print(i, ":", connect[i])
+
+	ADDEDGE(VALUE1, VALUE2)
+		connect[VALUE1].append(VALUE2)
+		connect[VALUE2].append(VALUE1)

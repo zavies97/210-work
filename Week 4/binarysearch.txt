@@ -1,0 +1,15 @@
+BINARYSEARCH(LOW, HIGH, ARRAY)
+	if len(ARRAY) = 0
+		RETURN False
+	else:
+		midpoint <- int(lenGTH(ARRAY)/2)
+		if ARRAY[midpoint] < HIGH and ARRAY[midpoint] > LOW
+			RETURN True
+		elif ARRAY[midpoint] < LOW
+			delete ARRAY[0 to midpoint]
+			RETURN BINARYSEARCH(LOW, HIGH, ARRAY)
+		elif ARRAY[midpoint] > high
+			delete ARRAY[midpoint to length(ARRAY)]
+			RETURN BINARYSEARCH(LOW, HIGH, ARRAY)
+		else:
+			RETURN False

@@ -1,0 +1,4 @@
+multiply one row by one column for dot product
+additipon and subtraction are each part by each part
+
+

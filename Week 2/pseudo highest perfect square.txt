@@ -1,0 +1,9 @@
+HIGHEST_PERF_SQUARE(VALUE)
+	counter <- 1
+	square <- counter*counter
+	while square <= value
+		if square = value
+			return counter
+		counter++
+		square <- counter*counter
+	return counter
